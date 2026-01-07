@@ -6,8 +6,7 @@
 
 Hace unos meses, los sistemas de seguridad de Mastercard detectaron un ataque de phishing dirigido a los empleados. Aunque el ataque falló por ser una "falsificación evidente", se utiliza como caso de estudio para mejorar la detección de amenazas más sofisticadas.
 
-
-!\[Evidencia 1](./imagenes/evidencia1.png)
+![Evidencia 1](./imagenes/evidencia1.png) por: ![Evidencia 1](evidencia1.png)
 
 
 
@@ -57,11 +56,12 @@ A continuación se presenta el resultado de la simulación diseñada, aplicando 
 
 
 
-!\[Evidencia 2](./imagenes/evidencia2.png)
+![Evidencia 2](./imagenes/evidencia2.png) por: ![Evidencia 2](evidencia2.png)
 
-!\[Evidencia 3](./imagenes/evidencia3.png)
+![Evidencia 3](./imagenes/evidencia3.png) por: ![Evidencia 3](evidencia3.png)
 
 ## 5. Conclusión
 
 El desarrollo de esta simulación permite medir la capacidad de respuesta de los empleados ante ataques de Phishing. Al corregir los errores del ataque original e incluir elementos de legitimidad como firmas de IT, contextos de cumplimiento (MFA) y avisos de confidencialidad, se crea un escenario realista que ayuda a fortalecer la cultura de ciberseguridad organizacional y a identificar áreas críticas que requieren mayor capacitación técnica.
+
 

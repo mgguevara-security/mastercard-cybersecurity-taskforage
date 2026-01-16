@@ -37,7 +37,7 @@ Análisis WHOIS: Se verificó que el dominio del atacante carece de registros vi
 
 
 ![Evidencia](./imagenes/evidencia.png) por: ![Evidencia](evidencia.png)
-![Evidencia](./imagenes/evidencia.png) por: ![Evidencia](evidencia2.png)
+![Evidencia2](evidencia2.png)
 
 
 
@@ -85,6 +85,7 @@ El desarrollo de esta simulación permite medir la capacidad de respuesta de los
 Protocolos de Email: Configurar y endurecer los registros SPF, DKIM y políticas de DMARC (en modo quarantine o reject) para evitar que atacantes externos puedan suplantar el dominio oficial de la empresa.
 
 MFA (Multi-Factor Authentication): Implementar el uso de tokens físicos o aplicaciones de autenticación para mitigar el impacto en caso de que un empleado entregue sus credenciales.
+
 
 
 

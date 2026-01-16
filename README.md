@@ -24,6 +24,12 @@ Hace unos meses, los sistemas de seguridad de Mastercard detectaron un ataque de
 
 \* \*\*Falta de Personalización:\*\* El correo utiliza un saludo genérico "Hello (insert name)", lo que confirma que se trata de un envío masivo automatizado y no de una comunicación oficial de Mastercard.
 
+### 🔍 Validación Técnica de IoCs (Indicadores de Compromiso) Para confirmar la naturaleza maliciosa de los hallazgos, se aplicó el siguiente flujo de análisis:
+
+*Reputación de Dominio:* Se contrastó el dominio del remitente y las IPs de origen en VirusTotal y Cisco Talos Intelligence, confirmando que estaban categorizados como Malicious/Phishing.
+
+*Análisis WHOIS:* Se verificó que el dominio del atacante fue registrado recientemente, una técnica típica de infraestructura descartable para campañas de phishing.
+
 
 
 
@@ -63,5 +69,13 @@ A continuación se presenta el resultado de la simulación diseñada, aplicando 
 ## 5. Conclusión
 
 El desarrollo de esta simulación permite medir la capacidad de respuesta de los empleados ante ataques de Phishing. Al corregir los errores del ataque original e incluir elementos de legitimidad como firmas de IT, contextos de cumplimiento (MFA) y avisos de confidencialidad, se crea un escenario realista que ayuda a fortalecer la cultura de ciberseguridad organizacional y a identificar áreas críticas que requieren mayor capacitación técnica.
+
+
+### *Recomendaciones de Seguridad Proactiva Más allá de la capacitación, se recomienda a la organización implementar las siguientes defensas técnicas:
+
+Protocolos de Email: Configurar y endurecer los registros SPF, DKIM y políticas de DMARC (en modo quarantine o reject) para evitar que atacantes externos puedan suplantar el dominio oficial de la empresa.
+
+MFA (Multi-Factor Authentication): Implementar el uso de tokens físicos o aplicaciones de autenticación para mitigar el impacto en caso de que un empleado entregue sus credenciales.
+
 
 

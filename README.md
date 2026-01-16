@@ -26,9 +26,16 @@ Hace unos meses, los sistemas de seguridad de Mastercard detectaron un ataque de
 
 ### 🔍 Validación Técnica de IoCs (Indicadores de Compromiso) Para confirmar la naturaleza maliciosa de los hallazgos, se aplicó el siguiente flujo de análisis:
 
-*Reputación de Dominio:* Se contrastó el dominio del remitente y las IPs de origen en VirusTotal y Cisco Talos Intelligence, confirmando que estaban categorizados como Malicious/Phishing.
+ Para confirmar la naturaleza del ataque, se aplicó un flujo de análisis técnico sobre los indicadores encontrados:
 
-*Análisis WHOIS:* Se verificó que el dominio del atacante fue registrado recientemente, una técnica típica de infraestructura descartable para campañas de phishing.
+Reputación de Dominio (VirusTotal/Cisco Talos): El remitente fue categorizado como "Clean". Como analista, se determinó que esto representa un Falso Negativo táctico, ya que los atacantes utilizan dominios de alta reputación (gmail.com) y cuentas de reciente creación para evadir los sistemas de detección automatizados basados en listas negras.
+
+Análisis de Identidad: Se confirmó la anomalía total entre la entidad suplantada (Mastercard) y el uso de una infraestructura de correo gratuita y pública, lo cual es un indicador crítico de Phishing en entornos corporativos.
+
+Análisis WHOIS: Se verificó que el dominio del atacante carece de registros vinculados a la infraestructura oficial de Mastercard, confirmando una técnica de infraestructura descartable.
+
+
+
 
 
 
@@ -76,6 +83,7 @@ El desarrollo de esta simulación permite medir la capacidad de respuesta de los
 Protocolos de Email: Configurar y endurecer los registros SPF, DKIM y políticas de DMARC (en modo quarantine o reject) para evitar que atacantes externos puedan suplantar el dominio oficial de la empresa.
 
 MFA (Multi-Factor Authentication): Implementar el uso de tokens físicos o aplicaciones de autenticación para mitigar el impacto en caso de que un empleado entregue sus credenciales.
+
 
 
 

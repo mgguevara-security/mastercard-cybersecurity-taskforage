@@ -35,7 +35,7 @@ Análisis de Identidad: Se confirmó la anomalía total entre la entidad suplant
 Análisis WHOIS: Se verificó que el dominio del atacante carece de registros vinculados a la infraestructura oficial de Mastercard, confirmando una técnica de infraestructura descartable.
 
 
-
+![Evidencia](./imagenes/evidencia.png) por: ![Evidencia](evidencia.png)
 
 
 
@@ -83,6 +83,7 @@ El desarrollo de esta simulación permite medir la capacidad de respuesta de los
 Protocolos de Email: Configurar y endurecer los registros SPF, DKIM y políticas de DMARC (en modo quarantine o reject) para evitar que atacantes externos puedan suplantar el dominio oficial de la empresa.
 
 MFA (Multi-Factor Authentication): Implementar el uso de tokens físicos o aplicaciones de autenticación para mitigar el impacto en caso de que un empleado entregue sus credenciales.
+
 
 
 

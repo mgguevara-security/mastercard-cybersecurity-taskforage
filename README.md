@@ -16,13 +16,14 @@ Hace unos meses, los sistemas de seguridad de Mastercard detectaron un ataque de
 
 
 
-\* \*\*Remitente Sospechoso:\*\* Se validó que el correo contiene una falta de ortografía en el nombre de la entidad y utiliza un dominio público (gmail.com), confirmando el intento de suplantación.
+*Remitente Sospechoso:* Se validó que el correo contiene una falta de ortografía en el nombre de la entidad y utiliza un dominio público (gmail.com), confirmando el intento de suplantación.
 
-\* \*\*Uso de Urgencia:\*\* El asunto "URGENT!" y la amenaza de bloquear la cuenta en una hora son tácticas de presión para forzar una acción rápida.
+*Uso de Urgencia:* El asunto "URGENT!" y la amenaza de bloquear la cuenta en una hora son tácticas de presión para forzar una acción rápida.
 
-\* \*\*Enlace Fraudulento:\*\* El hipervínculo para "resetear la contraseña" redirige a un sitio externo (Wikipedia) en lugar de un portal oficial de la empresa.
+*Enlace Fraudulento:* El hipervínculo para "resetear la contraseña" redirige a un sitio externo (Wikipedia) en lugar de un portal oficial de la empresa.
 
-\* \*\*Falta de Personalización:\*\* El correo utiliza un saludo genérico "Hello (insert name)", lo que confirma que se trata de un envío masivo automatizado y no de una comunicación oficial de Mastercard.
+*Falta de Personalización:* El correo utiliza un saludo genérico "Hello (insert name)", lo que confirma que se trata de un envío masivo automatizado y no de una comunicación oficial de Mastercard.
+
 
 ### 🔍 Validación Técnica de IoCs (Indicadores de Compromiso) Para confirmar la naturaleza maliciosa de los hallazgos, se aplicó el siguiente flujo de análisis:
 
@@ -83,6 +84,7 @@ El desarrollo de esta simulación permite medir la capacidad de respuesta de los
 Protocolos de Email: Configurar y endurecer los registros SPF, DKIM y políticas de DMARC (en modo quarantine o reject) para evitar que atacantes externos puedan suplantar el dominio oficial de la empresa.
 
 MFA (Multi-Factor Authentication): Implementar el uso de tokens físicos o aplicaciones de autenticación para mitigar el impacto en caso de que un empleado entregue sus credenciales.
+
 
 
 
